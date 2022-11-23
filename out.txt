@@ -1,0 +1,144 @@
+Wed Nov 23 04:39:36, Info:  Welcome to SeisSol 
+Wed Nov 23 04:39:36, Info:  Copyright (c) 2012-2021, SeisSol Group 
+Wed Nov 23 04:39:36, Info:  Built on: Nov 15 2022 17:50:27 
+Wed Nov 23 04:39:36, Info:  Version: 202103_Sumatra-1135-g22ed98b 
+Wed Nov 23 04:39:36, Info:  Running on: localhost.localdomain 
+Wed Nov 23 04:39:36, Info:  Using MPI with #ranks: 48 
+Wed Nov 23 04:39:36, Info:  Using OMP with #threads/rank: 4 
+Wed Nov 23 04:39:36, Info:  OpenMP worker affinity (this process): "0---4---8-|--2-------|----------|----------|----------|----------|----------|----------|----------|----------|----------|--2---6---|0---4-----|----------|----------|----------|----------|----------|----------|----------|----------|----------|----" 
+Wed Nov 23 04:39:36, Info:  OpenMP worker affinity (this node)   : "0123456789|012345----|----------|----------|----------|----------|----------|----------|----------|----------|----------|--23456789|01234567--|----------|----------|----------|----------|----------|----------|----------|----------|----------|----" 
+Wed Nov 23 04:39:39, Info:  Communication thread affinity        : "----------|------6---|0---4---8-|--2---6---|0---4---8-|--2---6---|0---4---8-|--2---6---|0---4---8-|--2---6---|0---4---8-|----------|--------8-|--2---6---|0---4---8-|--2---6---|0---4---8-|--2---6---|0---4---8-|--2---6---|0---4---8-|--2---6---|0---" 
+Wed Nov 23 04:39:39, Info:  The stack size ulimit is  8192 [kb]. 
+Wed Nov 23 04:39:39, Info:  Input Parameters:
+ 0x251c470 
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <                SeisSol MPI initialization               >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    |  Double precision used for real.
+Rank:        0 | Info    | <--------------------------------------------------------->
+ INFORMATION: The assumed unit number is           6 for stdout and           0 for stderr.
+              If no information follows, please change the value.
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start ini_SeisSol ...                               >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <  Parameters read from file: parameters.par              >
+Rank:        0 | Info    | <                                                         >
+Rank:        0 | Info    | No plasticity assumed. 
+Rank:        0 | Info    | No attenuation assumed. 
+Rank:        0 | Info    | No adjoint wavefield generated. 
+Rank:        0 | Info    | Isotropic material is assumed. 
+Rank:        0 | Info    | Read a PUML mesh file
+Rank:        0 | Info    | Volume output is in XDMF format (new implementation)
+Rank:        0 | Info    | Output data are generated at delta T=    1.0000000000000000E-004
+Rank:        0 | Info    | Use POSIX XdmfWriter backend
+Rank:        0 | Info    | Refinement strategy for volume output is Face Extraction :  4 subcells per cell
+Wed Nov 23 04:39:39, Info:  Running mini SeisSol to determine node weight 
+Wed Nov 23 04:40:22, Info:  Node weights: mean = 0.0294762  std = 0.000960167  min = 0.0277947  median = 0.0294743  max = 0.0314071 
+Wed Nov 23 04:40:22, Info:  Reading PUML mesh loh.puml.h5 
+Wed Nov 23 04:40:25, Info:  Found 2087951 cells 
+Wed Nov 23 04:40:29, Info:  Found 354789 vertices 
+Wed Nov 23 04:41:20, Info:  Computing LTS weights. 
+Wed Nov 23 04:41:51, Info:  Computing LTS weights. Done.  (23567 reductions.)
+      Setup: Max:   7.667, Sum: 357.249, Balance:   1.030
+   Matching: Max:  11.481, Sum: 540.595, Balance:   1.019
+Contraction: Max:   8.140, Sum: 378.397, Balance:   1.033
+   InitPart: Max:   4.465, Sum: 210.974, Balance:   1.016
+    Project: Max:   1.393, Sum:  49.983, Balance:   1.338
+ Initialize: Max:   6.619, Sum: 301.351, Balance:   1.054
+      K-way: Max: 113.137, Sum: 5418.548, Balance:   1.002
+      Remap: Max:   1.737, Sum:  79.720, Balance:   1.046
+      Total: Max: 158.036, Sum: 7581.806, Balance:   1.001
+Wed Nov 23 04:45:09, Info:  Reading mesh. Done. 
+Wed Nov 23 04:45:17, Info:  Mesh initialized in: 297.656 (min: 294.655, max: 300.564)
+Wed Nov 23 04:45:19, Info:  Deriving clusters ids for min. time step width / multiRate: 2.92182e-08 / 2 
+Wed Nov 23 04:45:20, Info:  Number of elements in time clusters: 
+Wed Nov 23 04:45:20, Info:  0: 8 
+Wed Nov 23 04:45:20, Info:  1: 37 
+Wed Nov 23 04:45:20, Info:  2: 264 
+Wed Nov 23 04:45:20, Info:  3: 1904 
+Wed Nov 23 04:45:20, Info:  4: 8687 
+Wed Nov 23 04:45:20, Info:  5: 205343 
+Wed Nov 23 04:45:20, Info:  6: 612095 
+Wed Nov 23 04:45:20, Info:  7: 665900 
+Wed Nov 23 04:45:20, Info:  8: 593702 
+Wed Nov 23 04:45:20, Info:  9: 11 
+Wed Nov 23 04:45:21, Info:  maximum theoretical speedup (compared to GTS): 124.119 per cell LTS, 85.6564 with the used clustering. 
+Wed Nov 23 04:45:21, Info:  Number of elements in dynamic rupture time clusters: 
+Wed Nov 23 04:45:21, Info:  0 (dr): 0 
+Wed Nov 23 04:45:21, Info:  1 (dr): 0 
+Wed Nov 23 04:45:21, Info:  2 (dr): 0 
+Wed Nov 23 04:45:21, Info:  3 (dr): 0 
+Wed Nov 23 04:45:21, Info:  4 (dr): 0 
+Wed Nov 23 04:45:21, Info:  5 (dr): 0 
+Wed Nov 23 04:45:21, Info:  6 (dr): 0 
+Wed Nov 23 04:45:21, Info:  7 (dr): 0 
+Wed Nov 23 04:45:21, Info:  8 (dr): 0 
+Wed Nov 23 04:45:21, Info:  9 (dr): 0 
+Wed Nov 23 04:45:21, Info:  Initialize Friction Model 
+Rank:        0 | Info    | Synchronizing copy cell material data.
+Wed Nov 23 04:45:33, Info:  <---------------------------------------------------------> 
+Wed Nov 23 04:45:33, Info:  <                      Point sources                      > 
+Wed Nov 23 04:45:33, Info:  <---------------------------------------------------------> 
+Wed Nov 23 04:45:33, Info:  Finding meshIds for point sources... 
+Wed Nov 23 04:45:33, Info:  Cleaning possible double occurring point sources for MPI... 
+Wed Nov 23 04:45:34, Info:  Mapping point sources to LTS cells... 
+Wed Nov 23 04:45:34, Info:  .. finished point source initialization. 
+Rank:        0 | Info    | Initializing element local matrices.
+Rank:        0 | Info    | DG initial condition projection... 
+Wed Nov 23 04:45:39, Info:  Using initial condition  "Zero" . 
+Rank:        0 | Info    | DG initial condition projection done. 
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start inioutput_SeisSol ...                         >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Wed Nov 23 04:45:39, Info:  Initializing free surface integrator. 
+Wed Nov 23 04:45:42, Info:  Initializing free surface integrator. Done. 
+Wed Nov 23 04:45:42, Info:  Initializing XDMF wave field output. 
+Wed Nov 23 04:45:42, Info:  Refinement Strategy is "Divide by 4" 
+Wed Nov 23 04:45:42, Info:  Refinement class initialized 
+Wed Nov 23 04:45:42, Info:  VariableSubsampler initialized 
+Wed Nov 23 04:45:51, Info:  High order output initialized 
+Wed Nov 23 04:45:51, Info:  Initializing XDMF wave field output. Done. 
+Wed Nov 23 04:45:51, Info:  Initializing free surface output. 
+Wed Nov 23 04:45:55, Info:  Initializing free surface output. Done. 
+Wed Nov 23 04:45:55, Info:  Record points read from "recordPoints.dat" 
+Wed Nov 23 04:45:55, Info:  Number of record points = 20 
+Wed Nov 23 04:45:55, Info:  Finding meshIds for receivers... 
+Wed Nov 23 04:45:55, Info:  Cleaning possible double occurring receivers for MPI... 
+Wed Nov 23 04:45:55, Info:  Mapping receivers to LTS cells... 
+Rank:        0 | Info    | <--------------------------------------------------------->
+Rank:        0 | Info    | <     Start calc_SeisSol ...                              >
+Rank:        0 | Info    | <--------------------------------------------------------->
+Wed Nov 23 04:45:55, Info:  Waiting for last wave field. 
+Wed Nov 23 04:45:55, Info:  Writing wave field at time 0.
+Wed Nov 23 04:45:56, Info:  Writing wave field at time 0. Done.
+Wed Nov 23 04:45:56, Info:  Writing free surface at time 0.
+Wed Nov 23 04:45:56, Info:  Writing free surface at time 0. Done.
+Wed Nov 23 04:52:49, Info:  Waiting for last wave field. 
+Wed Nov 23 04:52:49, Info:  Writing wave field at time 0.0001.
+Wed Nov 23 04:52:49, Info:  Writing wave field at time 0.0001. Done.
+Wed Nov 23 04:52:50, Info:  Writing free surface at time 0.0001.
+Wed Nov 23 04:52:50, Info:  Writing free surface at time 0.0001. Done.
+Wed Nov 23 04:52:53, Info:  0.142409 TFLOPS (rank 0: 2.88271 GFLOPS, average over ranks: 2.96685 GFLOPS) 
+Wed Nov 23 04:59:35, Info:  Waiting for last wave field. 
+Wed Nov 23 04:59:35, Info:  Writing wave field at time 0.0002.
+Wed Nov 23 04:59:35, Info:  Writing wave field at time 0.0002. Done.
+Wed Nov 23 04:59:36, Info:  Writing free surface at time 0.0002.
+Wed Nov 23 04:59:36, Info:  Writing free surface at time 0.0002. Done.
+Wed Nov 23 04:59:39, Info:  0.14409 TFLOPS (rank 0: 2.91254 GFLOPS, average over ranks: 3.00188 GFLOPS) 
+Wed Nov 23 05:06:20, Info:  Waiting for last wave field. 
+Wed Nov 23 05:06:20, Info:  Writing wave field at time 0.0003.
+Wed Nov 23 05:06:20, Info:  Writing wave field at time 0.0003. Done.
+Wed Nov 23 05:06:20, Info:  Writing free surface at time 0.0003.
+Wed Nov 23 05:06:20, Info:  Writing free surface at time 0.0003. Done.
+Wed Nov 23 05:06:21, Info:  0.144951 TFLOPS (rank 0: 2.92701 GFLOPS, average over ranks: 3.01982 GFLOPS) 
+Wed Nov 23 05:13:24, Info:  Waiting for last wave field. 
+Wed Nov 23 05:13:24, Info:  Writing wave field at time 0.0004.
+Wed Nov 23 05:13:24, Info:  Writing wave field at time 0.0004. Done.
+Wed Nov 23 05:13:24, Info:  Writing free surface at time 0.0004.
+Wed Nov 23 05:13:25, Info:  Writing free surface at time 0.0004. Done.
+Wed Nov 23 05:13:28, Info:  0.143404 TFLOPS (rank 0: 2.89846 GFLOPS, average over ranks: 2.98759 GFLOPS) 
+Wed Nov 23 05:20:23, Info:  Waiting for last wave field. 
+Wed Nov 23 05:20:23, Info:  Writing wave field at time 0.0005.
+Wed Nov 23 05:20:23, Info:  Writing wave field at time 0.0005. Done.
+Wed Nov 23 05:20:23, Info:  Writing free surface at time 0.0005.
+Wed Nov 23 05:20:23, Info:  Writing free surface at time 0.0005. Done.
